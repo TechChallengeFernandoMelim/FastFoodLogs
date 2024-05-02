@@ -24,7 +24,7 @@ public class Functions
     [LambdaFunction]
     public async Task Handler(SQSEvent evnt, ILambdaContext context)
     {
-        var logger = await GetLoger();
+        var logger = GetLoger();
 
         try
         {
@@ -60,7 +60,7 @@ public class Functions
         }
     }
 
-    private async Task<ILogger> GetLoger()
+    public virtual ILogger GetLoger()
     {
         string accessKey = Environment.GetEnvironmentVariable("AWS_ACCESS_KEY_DYNAMO");
         string secretKey = Environment.GetEnvironmentVariable("AWS_SECRET_KEY_DYNAMO");
