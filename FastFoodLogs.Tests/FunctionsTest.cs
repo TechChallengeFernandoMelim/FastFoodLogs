@@ -1,13 +1,7 @@
-using System;
-using System.IO;
 using Amazon.Lambda.SQSEvents;
 using Amazon.Lambda.TestUtilities;
-using Amazon.Runtime;
-using Amazon.Runtime.CredentialManagement;
 using Moq;
 using NLog;
-using NLog.AWS.Logger;
-using NLog.Config;
 using Xunit;
 
 namespace FastFoodLogs.Tests
