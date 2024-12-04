@@ -74,6 +74,8 @@ namespace FastFoodLogs.Tests
             // Assert
             Assert.NotNull(logger);
             Assert.IsType<Logger>(logger);
+
+
         }
 
     }
